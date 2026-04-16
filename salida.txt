@@ -1,0 +1,7 @@
+archivo1.txt
+archivo2.txt
+batch.txt
+comandos.txt
+salida.txt
+wish
+wish.c
