@@ -57,13 +57,37 @@ Durante el desarrollo de handle_redirection y split_parallel surgieron dudas sob
 ## Pruebas realizadas a los programas que verificaron su funcionalidad
 
 1. **Modo interactivo básico:** se ejecutó './wish' y se corrieron 'ls' y 'ls -la', verificando que el shell mostraba el prompt y ejecutaba comandos correctamente.
+   
+   <img width="488" height="246" alt="image" src="https://github.com/user-attachments/assets/4ba51603-e412-4ae2-9c9f-1ef4a2cdfc9a" />
+
 2. **Comando inexistente:** se ingresó 'comandofalso' y el shell imprimió el error estándar sin cerrarse.
+   
+   <img width="412" height="66" alt="image" src="https://github.com/user-attachments/assets/ef041f22-69a6-40bb-891e-5d516a3f307e" />
+
 3. **Built-in cd:** se cambió al directorio '/tmp' y se verificó con 'ls' que el directorio activo cambió.
+
+   <img width="1024" height="104" alt="image" src="https://github.com/user-attachments/assets/bcca850f-aff0-4cdf-b6dd-2bb52aa8c7d6" />
+
 4. **Built-in path:** se actualizó el path con '/bin /usr/bin' y se comprobó que los comandos seguían funcionando.
+
+   <img width="1017" height="103" alt="image" src="https://github.com/user-attachments/assets/722946aa-df63-4020-852b-b4171830f24a" />
+
 5. **Redirección >:** se ejecutó 'ls > salida.txt' y se verificó con 'cat salida.txt' que la salida se guardó en el archivo.
+
+   <img width="1029" height="263" alt="image" src="https://github.com/user-attachments/assets/9bf2e98c-eb1c-4033-8331-cf0b7214448e" />
+
 6. **Comandos paralelos &:** se ejecutó 'ls & pwd & echo hola' y los tres comandos corrieron en paralelo, retornando al prompt solo cuando todos terminaron.
+
+    <img width="483" height="103" alt="image" src="https://github.com/user-attachments/assets/1417a14b-8ed6-4b4f-9ace-ab8dabd0f1cc" />
+
 7. **Modo batch:** se ejecutó './wish batch.txt' y el shell procesó los comandos del archivo sin mostrar el prompt.
+
+    <img width="527" height="63" alt="image" src="https://github.com/user-attachments/assets/62732da0-07d8-47be-baa6-221c4e171794" />
+
 8. **Más de 2 argumentos:** se ejecutó './wish arg1 arg2' y el shell imprimió el error estándar y terminó con código 1.
+
+    <img width="522" height="62" alt="image" src="https://github.com/user-attachments/assets/b3a5aa69-4e19-4a79-960e-8701a6ef8c93" />
+
 
 ---
 
