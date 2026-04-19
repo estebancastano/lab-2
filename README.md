@@ -93,7 +93,7 @@ Durante el desarrollo de handle_redirection y split_parallel surgieron dudas sob
 
 ## Enlace al vídeo
 
-[Por agregar]
+https://youtu.be/O2VSxTw3Yjw 
 
 ---
 
